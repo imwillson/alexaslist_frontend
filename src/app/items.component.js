@@ -9,9 +9,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var itemservice_service_1 = require('./itemservice.service');
 var ItemsComponent = (function () {
-    function ItemsComponent() {
+    function ItemsComponent(itemService) {
+        this.itemService = itemService;
     }
+    ItemsComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.itemService.getItems().then(function (items) { return _this.items = items; });
+    };
     ItemsComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
@@ -19,7 +25,7 @@ var ItemsComponent = (function () {
             templateUrl: './items.component.html',
             styleUrls: ['./items.component.css']
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [itemservice_service_1.ItemService])
     ], ItemsComponent);
     return ItemsComponent;
 }());

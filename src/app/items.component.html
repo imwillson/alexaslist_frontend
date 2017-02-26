@@ -1,0 +1,7 @@
+<div class="background">
+    <h1>Items Available for Rent</h1>
+    <a routerLink="/add-item"><h2>Add Item</h2></a>
+    <div class="inventory">
+        <rent-item *ngFor="let item of items" name="{{item.name}}" imgUrl="{{item.imgUrl}}" description="{{item.description}}" price="{{item.price}}"></rent-item>
+    </div>
+</div>

@@ -1,0 +1,42 @@
+button.add {
+    background-color: #fbfbfb;
+    border: none;
+    height: 50px;
+    width: 330px;
+}
+
+button.add:hover {
+    background-color: #fe921f;
+}
+
+div.item-info {
+    margin: 0 auto;
+    width: 800px;
+}
+
+form {
+    margin: 0 auto;
+    text-align: center;
+}
+
+input {
+    border-radius: 4px;
+    height: 50px;
+    padding: 5px;
+    width: 330px;
+}
+
+h1 {
+    color: #fbfbfb;
+    font-family: Lato;
+    letter-spacing: 5px;
+    margin-top: 0;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.background {
+    background-color: #191E24;
+    height: 100%;
+    width: 100%;
+}

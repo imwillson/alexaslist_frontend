@@ -1,0 +1,36 @@
+body {
+    background-color: #191E24;
+}
+
+h1 {
+    color: #fbfbfb;
+    font-family: Lato;
+    letter-spacing: 5px;
+    margin-top: 0;
+    padding-top: 30px;
+    text-align: center;
+}
+
+h2 {
+    color: #fbfbfb;
+    cursor: pointer;
+    font-family: Lato;
+    letter-spacing: 5px;
+    margin-top: 0;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.background {
+    background-color: #191E24;
+    height: 100%;
+    width: 100%;
+}
+
+.inventory {
+    display: inline-block;  
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}

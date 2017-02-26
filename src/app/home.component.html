@@ -1,13 +1,50 @@
-<body [ngClass]="cssClass">
-    <nav>
-        <a><h1 class="nav-text">Search</h1></a>
-        <div class="pull-right">
-            <a routerLink="/home" routerLinkActive="active"><h1 class="nav-text">Home</h1></a>
-            <a routerLink="/items" routerLinkActive="active"><h1 class="nav-text">Items</h1></a>
-            <a><h1 class="nav-text">My Profile</h1></a>
+<div [ngClass]="cssClass">
+    <div class="overlay">
+        <nav>
+            <a>
+                <h1 class="nav-text">Search</h1>
+            </a>
+            <div class="pull-right">
+                <a routerLink="/home" routerLinkActive="active">
+                    <h1 class="nav-text">Home</h1>
+                </a>
+                <a routerLink="/items" routerLinkActive="active">
+                    <h1 class="nav-text">Items</h1>
+                </a>
+                <a>
+                    <h1 class="nav-text">My Profile</h1>
+                </a>
+            </div>
+        </nav>
+        <div class="big-name">Alexaslist</div>
+        <div class="sub-name">The place where you find your needs.</div>
+        <div class="register-signin">
+            <a>Sign In </a>
+            <a>Register</a>
         </div>
-    </nav>
-    <div class="big-name">Alexaslist</div>
-    <div class="sub-name">The place where you find your needs.</div>
-    <button class="learn">Learn more</button>
-</body> 
+    </div>
+</div>
+<div class="about-us">
+    <ul>
+        <li>
+            <i class="fa fa-money fa-5x" aria-hidden="true"></i>
+            <p>Make money by renting out unneed or hardly used items 
+                to other people for set periods of time</p>
+        </li>
+        <li>
+            <i class="fa fa-user-circle-o fa-5x" aria-hidden="true"></i>
+            <p>Interact with other users and see if they have items that you can
+                borrow. Get to know other people better.
+            </p>
+        </li>
+        <li>
+            <i class="fa fa-bicycle fa-5x" aria-hidden="true"></i>
+            <p>List handy everyday items for greater exposure and 
+                learn how to transact
+            </p>
+        </li>
+    </ul>
+</div>
+<div class="description">
+    <img src="public/renting.JPG" height="650px" width="1200px">
+</div>

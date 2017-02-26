@@ -1,0 +1,14 @@
+<div class="background">
+    <h1>Add Item</h1>
+    <div class="item-info">
+        <form (ngSubmit)="addItem()">
+            <input [(ngModel)]="item.name" name="name" type="text" placeholder="Name"><br/><br/>
+            <input [(ngModel)]="category" name="categories" type="text" placeholder="Categories"><br/><br/>
+            <input [(ngModel)]="item.description" name="description" type="text" placeholder="Description"><br/><br/>
+            <input [(ngModel)]="item.price" name="price" type="text" placeholder="Price"><br/><br/>
+            <input [(ngModel)]="item.location" name="location" type="text" placeholder="Location" disabled><br/><br/>
+            <input [(ngModel)]="item.imgUrl" name="imgUrl" type="text" placeholder="Image URL"><br/><br/>
+            <button class="add" type="submit">Add</button>
+        </form>
+    </div>
+</div>

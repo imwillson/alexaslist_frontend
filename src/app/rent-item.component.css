@@ -1,0 +1,21 @@
+div.item {
+    color: #fbfbfb;
+    display: inline-block;
+    letter-spacing: 5px;
+    margin: 30px;
+    max-height: 500px;
+    max-width: 600px;
+    text-align: center;
+    vertical-align: top;
+}
+
+div.item p {
+    letter-spacing: initial;
+    max-width: 250px;
+    margin: 0 auto;
+    vertical-align: center;
+}
+
+div.item img:hover {
+    filter: blur(1px);
+}

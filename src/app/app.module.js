@@ -10,20 +10,25 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
+var forms_1 = require('@angular/forms');
+var http_1 = require('@angular/http');
+var add_item_component_1 = require('./add-item.component');
 var app_component_1 = require('./app.component');
 var home_component_1 = require('./home.component');
 var items_component_1 = require('./items.component');
+var rent_item_component_1 = require('./rent-item.component');
 var background_service_1 = require('./background.service');
+var itemservice_service_1 = require('./itemservice.service');
 var app_routing_module_1 = require('./app-routing.module');
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule, app_routing_module_1.AppRoutingModule],
-            declarations: [app_component_1.AppComponent, home_component_1.HomeComponent, items_component_1.ItemsComponent],
+            imports: [platform_browser_1.BrowserModule, app_routing_module_1.AppRoutingModule, forms_1.FormsModule, http_1.HttpModule],
+            declarations: [app_component_1.AppComponent, home_component_1.HomeComponent, items_component_1.ItemsComponent, rent_item_component_1.RentItemComponent, add_item_component_1.AddItemComponent],
             bootstrap: [app_component_1.AppComponent],
-            providers: [background_service_1.BackgroundService]
+            providers: [background_service_1.BackgroundService, itemservice_service_1.ItemService]
         }), 
         __metadata('design:paramtypes', [])
     ], AppModule);
