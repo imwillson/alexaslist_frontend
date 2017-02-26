@@ -9,18 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
+var BackgroundService = (function () {
+    function BackgroundService() {
     }
-    AppComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'my-app',
-            template: "\n    <router-outlet></router-outlet>\n    ",
-        }), 
+    BackgroundService.prototype.getBackgroundClass = function () {
+        return 'home';
+    };
+    BackgroundService = __decorate([
+        core_1.Injectable(), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], BackgroundService);
+    return BackgroundService;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.BackgroundService = BackgroundService;
+//# sourceMappingURL=background.service.js.map

@@ -9,25 +9,25 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var platform_browser_1 = require('@angular/platform-browser');
-var app_component_1 = require('./app.component');
+var router_1 = require('@angular/router');
 var home_component_1 = require('./home.component');
 var items_component_1 = require('./items.component');
-var background_service_1 = require('./background.service');
-var app_routing_module_1 = require('./app-routing.module');
-var AppModule = (function () {
-    function AppModule() {
+var routes = [
+    { path: 'home', component: home_component_1.HomeComponent },
+    { path: 'items', component: items_component_1.ItemsComponent },
+    { path: '', redirectTo: '/home', pathMatch: 'full' },
+];
+var AppRoutingModule = (function () {
+    function AppRoutingModule() {
     }
-    AppModule = __decorate([
+    AppRoutingModule = __decorate([
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule, app_routing_module_1.AppRoutingModule],
-            declarations: [app_component_1.AppComponent, home_component_1.HomeComponent, items_component_1.ItemsComponent],
-            bootstrap: [app_component_1.AppComponent],
-            providers: [background_service_1.BackgroundService]
+            imports: [router_1.RouterModule.forRoot(routes)],
+            exports: [router_1.RouterModule]
         }), 
         __metadata('design:paramtypes', [])
-    ], AppModule);
-    return AppModule;
+    ], AppRoutingModule);
+    return AppRoutingModule;
 }());
-exports.AppModule = AppModule;
-//# sourceMappingURL=app.module.js.map
+exports.AppRoutingModule = AppRoutingModule;
+//# sourceMappingURL=app-routing.module.js.map
